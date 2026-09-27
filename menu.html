@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head>
+  <title>Menu | In-N-Out Burger</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#c3c8c3", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#434844", "surface-container-low": "#f6f3ee", "secondary-fixed-dim": "#f6bf22", "surface-variant": "#e5e2dd", "on-primary-fixed": "#410007", "on-tertiary-fixed": "#181d1a", "primary-fixed": "#ffdad8", "primary": "#9e001f", "secondary": "#775a00", "inverse-surface": "#31302d", "surface-container": "#f0ede9", "surface-dim": "#dcdad5", "on-secondary-fixed": "#251a00", "on-error-container": "#93000a", "background": "#fcf9f4", "tertiary-fixed": "#dfe4df", "on-secondary-container": "#6f5400", "on-secondary-fixed-variant": "#5a4300", "on-tertiary-container": "#dfe4df", "on-primary-fixed-variant": "#92001c", "secondary-fixed": "#ffdf99", "outline": "#906f6e", "error-container": "#ffdad6", "on-secondary": "#ffffff", "primary-fixed-dim": "#ffb3b1", "inverse-primary": "#ffb3b1", "tertiary-container": "#616662", "error": "#ba1a1a", "secondary-container": "#ffc72c", "tertiary": "#494e4b", "surface-tint": "#bf0229", "on-primary-container": "#ffdad8", "on-primary": "#ffffff", "outline-variant": "#e5bdbb", "surface-bright": "#fcf9f4", "inverse-on-surface": "#f3f0eb", "primary-container": "#c8102e", "on-error": "#ffffff", "surface-container-highest": "#e5e2dd", "on-surface-variant": "#5c403f", "on-surface": "#1c1c19", "on-background": "#1c1c19", "surface-container-high": "#ebe8e3", "surface": "#fcf9f4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.25rem", "margin": "2rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "label-lg": [ "Montserrat" ], "body-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-sm": [ "Montserrat" ], "label-sm": [ "Montserrat" ], "display-hero": [ "Montserrat" ], "headline-md": [ "Montserrat" ], "label-md": [ "Montserrat" ], "headline-lg": [ "Montserrat" ], "headline-lg-mobile": [ "Montserrat" ], "body-md": [ "Plus Jakarta Sans" ], "title-md": [ "Montserrat" ], "display-hero-mobile": [ "Montserrat" ] }, "fontSize": { "label-lg": [ "15px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "body-sm": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "800" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "body-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "title-md": [ "18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "700" } ], "display-hero-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_4px_16px_-2px_rgba(31,36,33,0.06)]"><div class="bg-primary text-on-primary py-space-xs px-margin"><div class="max-w-7xl mx-auto flex items-center justify-between font-label-md text-label-md tracking-wider uppercase"><div class="flex items-center gap-space-sm mx-auto md:mx-0 text-center"><span class="material-symbols-outlined text-secondary-container text-[16px]">grade</span><span>Quality You Can Taste Since 1948 • 100% Pure Beef &amp; Fresh Ingredients</span><span class="material-symbols-outlined text-secondary-container text-[16px]">grade</span></div><div class="hidden md:flex items-center gap-space-lg text-on-primary/90 font-label-sm text-label-sm"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">call</span> 1-800-786-1000</span><a class="hover:text-secondary-fixed transition-colors" data-path="gift-cards" href="#">Gift Cards</a><a class="hover:text-secondary-fixed transition-colors" data-path="company-store" href="#">Company Store</a></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="In-N-Out Burger Logo" class="h-8 w-auto object-contain" src="stitch-export/assets/logo.jpg"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary hidden sm:inline-block uppercase">In-N-Out Burger</span></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary text-on-primary rounded-full px-space-md py-space-xs shadow-sm font-label-lg text-label-lg"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all" data-path="home" href="#">Home</a><a aria-current="page" class="transition-all bg-primary text-on-primary rounded-full px-space-md py-space-xs shadow-sm font-label-lg text-label-lg" data-path="menu" href="#">Menu</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all" data-path="locations" href="#">Locations</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all" data-path="our-story" href="#">Our Story</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all" data-path="careers" href="#">Careers</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center gap-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg uppercase px-space-lg py-space-sm rounded-full shadow-[0_4px_16px_rgba(200,16,46,0.35)] hover:shadow-[0_6px_20px_rgba(200,16,46,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all ring-2 ring-secondary-container" data-path="order-now" href="#"><span class="material-symbols-outlined text-[20px] text-secondary-container">shopping_bag</span><span>Order Now</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Interactive & Quick Notification Bar -->
+<div class="w-full bg-secondary-container text-on-secondary-fixed py-space-xs px-margin text-center">
+<div class="max-w-7xl mx-auto flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider">
+<span class="flex items-center gap-space-xs mx-auto">
+<span class="material-symbols-outlined text-[16px] text-primary">eco</span>
+        Freshness Guaranteed: Potatoes peeled and sliced right before cooking • Hand-leafed California lettuce
+      </span>
+<span class="hidden lg:inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-bold">
+<span>Drive-Thru &amp; Dine-In Ready</span>
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+</span>
+</div>
+</div>
+<!-- Page Editorial Header -->
+<section class="w-full bg-surface-container-low py-space-xl px-margin">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-full mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">100% Quality Since 1948</span>
+</div>
+<h1 class="font-display-hero text-display-hero uppercase text-primary tracking-tight">Our Quality Menu</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs leading-relaxed max-w-2xl">
+          Simple, honest, and made fresh to order. No heat lamps, no microwaves, no freezers. Just pure American craftsmanship on a toasted sponge bun.
+        </p>
+</div>
+<!-- Quick Cart Peek Badge (Sticky helper counter) -->
+<div class="flex items-center gap-space-md self-start md:self-auto bg-surface-container-lowest p-space-sm rounded-2xl shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">local_mall</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-on-surface-variant">Your Tray</div>
+<div class="font-headline-sm text-headline-sm text-on-surface leading-none" id="tray-count">0 Items</div>
+</div>
+<button class="ml-space-sm px-space-md py-space-xs bg-primary text-on-primary rounded-full font-label-sm text-label-sm uppercase hover:bg-primary-container transition-all" onclick="scrollToOrderSummary()">
+          View
+        </button>
+</div>
+</div>
+<!-- Category Pill Filter Navigation Bar -->
+<div class="max-w-7xl mx-auto mt-space-lg">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs pt-space-xs no-scrollbar" id="category-pills">
+<button class="category-btn px-space-lg py-space-xs rounded-full font-label-lg text-label-lg whitespace-nowrap bg-primary text-on-primary shadow-sm transition-all" onclick="filterCategory('all', this)">
+          All Items
+        </button>
+<button class="category-btn px-space-lg py-space-xs rounded-full font-label-lg text-label-lg whitespace-nowrap bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" onclick="filterCategory('burgers', this)">
+          Burgers
+        </button>
+<button class="category-btn px-space-lg py-space-xs rounded-full font-label-lg text-label-lg whitespace-nowrap bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" onclick="filterCategory('fries', this)">
+          Fresh Fries
+        </button>
+<button class="category-btn px-space-lg py-space-xs rounded-full font-label-lg text-label-lg whitespace-nowrap bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" onclick="filterCategory('shakes', this)">
+          Real Shakes
+        </button>
+<button class="category-btn px-space-lg py-space-xs rounded-full font-label-lg text-label-lg whitespace-nowrap bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all" onclick="filterCategory('drinks', this)">
+          Beverages
+        </button>
+<button class="category-btn px-space-lg py-space-xs rounded-full font-label-lg text-label-lg whitespace-nowrap bg-secondary-container text-on-secondary-fixed hover:bg-secondary-fixed transition-all flex items-center gap-space-xs" onclick="filterCategory('secret', this)">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+<span>Secret Menu / Not-So-Secret</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Menu Grid Layout with Layout Split (8 Col Menu / 4 Col Side Tray & Highlights) -->
+<div class="max-w-7xl mx-auto px-margin py-space-xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Stream: Food Categories -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl" id="menu-stream">
+<!-- SECTION 1: BURGERS -->
+<section class="menu-section flex flex-col gap-space-md" id="section-burgers">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Grade-A Quality</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">Burgers</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline-block">100% USDA Ground Chuck • Never Frozen</span>
+</div>
+<!-- Customization Highlights Ribbon -->
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-wrap items-center gap-space-sm shadow-sm">
+<span class="font-label-md text-label-md uppercase text-on-surface font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">tune</span>
+              Available Customizations:
+            </span>
+<span class="bg-surface-container-lowest px-space-sm py-1 rounded-full font-label-sm text-label-sm uppercase text-primary">Protein Style (Lettuce Wrapped)</span>
+<span class="bg-surface-container-lowest px-space-sm py-1 rounded-full font-label-sm text-label-sm uppercase text-on-surface">Grilled Onions Available</span>
+<span class="bg-surface-container-lowest px-space-sm py-1 rounded-full font-label-sm text-label-sm uppercase text-on-surface">Extra Spread</span>
+<span class="bg-surface-container-lowest px-space-sm py-1 rounded-full font-label-sm text-label-sm uppercase text-on-surface">Mustard Grilled Patty</span>
+</div>
+<!-- Burger Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Item 1: Double-Double -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-56 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img alt="In-N-Out Double-Double Burger" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="stitch-export/assets/double-burger.jpg"/>
+<span class="absolute top-space-xs left-space-xs bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm uppercase px-space-sm py-0.5 rounded-full shadow">
+                    Most Popular
+                  </span>
+<span class="absolute bottom-space-xs right-space-xs bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full backdrop-blur-sm">
+                    670 Cal
+                  </span>
+</div>
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Double-Double®</h3>
+<span class="font-headline-sm text-headline-sm text-primary">$5.45</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                  Two 100% pure beef patties, two slices of American cheese, crisp hand-leafed lettuce, ripe tomato, and our classic spread on a freshly toasted sponge dough bun.
+                </p>
+<div class="mt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] font-label-sm uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Signature</span>
+<span class="text-[11px] font-label-sm uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Double Beef</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<button class="w-full py-space-xs px-space-md bg-primary-container text-on-primary rounded-full font-label-lg text-label-lg uppercase flex items-center justify-center gap-space-xs hover:bg-primary shadow-sm transition-all active:scale-95" onclick="quickAdd('Double-Double®', 5.45)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add To Order</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Cheeseburger -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-56 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Classic In-N-Out style single cheeseburger with toasted golden bun, melted yellow American cheese over a juicy grilled beef patty, red tomato slice, green leaf lettuce, and Thousand Island spread on a warm diner counter" src="stitch-export/assets/generated-29435c091882.jpg"/>
+<span class="absolute bottom-space-xs right-space-xs bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full backdrop-blur-sm">
+                    480 Cal
+                  </span>
+</div>
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Cheeseburger</h3>
+<span class="font-headline-sm text-headline-sm text-primary">$4.15</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                  100% pure beef patty, real American cheese, crisp lettuce, tomato, and spread on a toasted bun with freshly sliced or grilled onions upon request.
+                </p>
+<div class="mt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] font-label-sm uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Real Cheese</span>
+<span class="text-[11px] font-label-sm uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Fresh Cut Onion</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<button class="w-full py-space-xs px-space-md bg-primary-container text-on-primary rounded-full font-label-lg text-label-lg uppercase flex items-center justify-center gap-space-xs hover:bg-primary shadow-sm transition-all active:scale-95" onclick="quickAdd('Cheeseburger', 4.15)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add To Order</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Hamburger -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-56 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional classic single hamburger with fresh toasted bun, seasoned beef patty, ripe red tomato slice, crunchy lettuce, and spread presented in vintage diner style on butcher paper" src="stitch-export/assets/generated-eeb400239bda.jpg"/>
+<span class="absolute bottom-space-xs right-space-xs bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full backdrop-blur-sm">
+                    390 Cal
+                  </span>
+</div>
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Hamburger</h3>
+<span class="font-headline-sm text-headline-sm text-primary">$3.65</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                  100% pure beef patty, crisp lettuce, plump tomato, and spread on a freshly baked toasted bun. Light, wholesome, and prepared the original 1948 way.
+                </p>
+<div class="mt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] font-label-sm uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Original 1948</span>
+<span class="text-[11px] font-label-sm uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Custom Dress</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<button class="w-full py-space-xs px-space-md bg-primary-container text-on-primary rounded-full font-label-lg text-label-lg uppercase flex items-center justify-center gap-space-xs hover:bg-primary shadow-sm transition-all active:scale-95" onclick="quickAdd('Hamburger', 3.65)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add To Order</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Animal Style Burger -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-56 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="In-N-Out Animal Style burger close-up with mustard-seared beef patty, bubbling melted cheese, sweet grilled caramelized brown onions, tangy pickle chips, and rich extra secret spread inside a toasted bun" src="stitch-export/assets/generated-a3506f3e79ff.jpg"/>
+<span class="absolute top-space-xs left-space-xs bg-primary text-on-primary font-label-sm text-label-sm uppercase px-space-sm py-0.5 rounded-full shadow">
+                    Legendary Secret
+                  </span>
+<span class="absolute bottom-space-xs right-space-xs bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full backdrop-blur-sm">
+                    710 Cal
+                  </span>
+</div>
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Animal Style® Burger</h3>
+<span class="font-headline-sm text-headline-sm text-primary">$5.95</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                  Mustard-cooked beef patty, extra Thousand Island spread, crunchy pickles, and hot grilled caramelized onions. Unmatched California roadside icon.
+                </p>
+<div class="mt-space-sm flex flex-wrap gap-1">
+<span class="text-[11px] font-label-sm uppercase px-2 py-0.5 rounded bg-secondary-container text-on-secondary-fixed font-bold">Mustard Cooked</span>
+<span class="text-[11px] font-label-sm uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Caramelized Onions</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<button class="w-full py-space-xs px-space-md bg-primary-container text-on-primary rounded-full font-label-lg text-label-lg uppercase flex items-center justify-center gap-space-xs hover:bg-primary shadow-sm transition-all active:scale-95" onclick="quickAdd('Animal Style® Burger', 5.95)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add To Order</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: FRENCH FRIES -->
+<section class="menu-section flex flex-col gap-space-md pt-space-lg" id="section-fries">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Fresh Daily</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">Fresh-Cut French Fries</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline-block">100% Sunflower Oil • Zero Additives</span>
+</div>
+<!-- Featured Fries Banner (Inspiration Image 2 Integration) -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-sm flex flex-col md:flex-row gap-space-lg items-center">
+<div class="w-full md:w-1/2 h-64 rounded-2xl overflow-hidden bg-surface-container relative">
+<img alt="Fresh hand cut french fries in red paper tray" class="w-full h-full object-cover" src="stitch-export/assets/fries.jpg"/>
+<span class="absolute bottom-space-xs left-space-xs bg-surface-container-lowest/90 px-space-sm py-0.5 rounded-full font-label-sm text-label-sm uppercase text-on-surface backdrop-blur-sm">
+                Single Store Sliced
+              </span>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-between">
+<div>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase px-space-sm py-0.5 rounded-full inline-block mb-space-xs">
+                  Hand-Diced In Every Store
+                </span>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface">Fresh Hand-Cut French Fries</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                  Fresh Kennebec potatoes sliced right before your eyes in our open kitchen, soaked in fresh water, and fried in pure, 100% cholesterol-free sunflower oil.
+                </p>
+<div class="flex items-center gap-space-md mt-space-md">
+<span class="font-headline-md text-headline-md text-primary font-bold">$2.45</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">370 Cal</span>
+</div>
+</div>
+<div class="mt-space-lg flex flex-wrap gap-space-sm">
+<button class="px-space-lg py-space-xs bg-primary-container text-on-primary rounded-full font-label-lg text-label-lg uppercase flex items-center gap-space-xs hover:bg-primary shadow-sm transition-all active:scale-95" onclick="quickAdd('Fresh Hand-Cut Fries', 2.45)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add To Order</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Fries Variants Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Animal Style Fries -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-full h-44 rounded-xl overflow-hidden mb-space-md bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Hot In-N-Out Animal Style fresh-cut fries overflowing in vintage cardboard diner boat topped with golden melted cheese, grilled sweet browned onions, and cold thousand island burger sauce" src="stitch-export/assets/generated-35e63ce488e0.jpg"/>
+<span class="absolute top-space-xs right-space-xs bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm uppercase px-space-sm py-0.5 rounded-full">
+                    Fan Favorite
+                  </span>
+</div>
+<div class="flex items-start justify-between">
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">Animal Style® Fries</h4>
+<span class="font-headline-sm text-headline-sm text-primary">$4.85</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                  Golden hand-cut fries smothered with melted American cheese, hot grilled onions, and our signature cold spread. Fork included.
+                </p>
+</div>
+<div class="mt-space-md pt-space-sm">
+<button class="w-full py-space-xs px-space-md bg-surface-container text-primary hover:bg-primary hover:text-on-primary rounded-full font-label-lg text-label-lg uppercase flex items-center justify-center gap-space-xs transition-all" onclick="quickAdd('Animal Style® Fries', 4.85)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Animal Style ($4.85)</span>
+</button>
+</div>
+</div>
+<!-- Crispness Customized Fries -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-full h-44 rounded-xl overflow-hidden mb-space-md bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Basket of extra crisp golden well-done french fries with sea salt sprinkles next to dipping cups of ketchup in bright diner lighting" src="stitch-export/assets/generated-f62339e52f0b.jpg"/>
+<span class="absolute top-space-xs right-space-xs bg-surface-variant text-on-surface-variant font-label-sm text-label-sm uppercase px-space-sm py-0.5 rounded-full">
+                    Custom Cook
+                  </span>
+</div>
+<div class="flex items-start justify-between">
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">Custom Crispness Fries</h4>
+<span class="font-headline-sm text-headline-sm text-primary">$2.45</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                  Cooked to your exact liking: Light, Light-Well, Well-Done, or Extra-Well. Freshly dropped upon order.
+                </p>
+</div>
+<div class="mt-space-md pt-space-sm">
+<button class="w-full py-space-xs px-space-md bg-surface-container text-primary hover:bg-primary hover:text-on-primary rounded-full font-label-lg text-label-lg uppercase flex items-center justify-center gap-space-xs transition-all" onclick="quickAdd('Custom Crisp Fries', 2.45)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Select Crisp Level ($2.45)</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: REAL ICE CREAM SHAKES -->
+<section class="menu-section flex flex-col gap-space-md pt-space-lg" id="section-shakes">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">100% Real Ice Cream</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">Shakes &amp; Floats</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline-block">Ultra-Thick • Spoon or Straw</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Chocolate -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-full h-36 rounded-xl bg-surface-container overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover" data-alt="Thick dark rich chocolate milkshake in retro paper cup with red straw against clean retro diner surface" src="stitch-export/assets/generated-0e4e34b756f9.jpg"/>
+<span class="absolute bottom-2 right-2 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">590 Cal</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">Chocolate</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Rich Dutch chocolate blended into creamy frozen perfection.</p>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">$3.15</span>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary active:scale-95 transition-all" onclick="quickAdd('Chocolate Shake', 3.15)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Vanilla -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-full h-36 rounded-xl bg-surface-container overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover" data-alt="Creamy Madagascar vanilla bean shake in tall cup with condensation beads and classic striped straw" src="stitch-export/assets/generated-cabae360cc29.jpg"/>
+<span class="absolute bottom-2 right-2 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">580 Cal</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">Vanilla</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pure vanilla bean infusion, ultra velvety and timeless.</p>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">$3.15</span>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary active:scale-95 transition-all" onclick="quickAdd('Vanilla Shake', 3.15)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Strawberry -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-full h-36 rounded-xl bg-surface-container overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover" data-alt="Pink sweet strawberry thick milkshake with fresh berry notes in California roadside burger setting" src="stitch-export/assets/generated-5491e69500c4.jpg"/>
+<span class="absolute bottom-2 right-2 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">590 Cal</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">Strawberry</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sweet, refreshing California strawberry cream goodness.</p>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">$3.15</span>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary active:scale-95 transition-all" onclick="quickAdd('Strawberry Shake', 3.15)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Neapolitan (Secret Menu Classic) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-full h-36 rounded-xl bg-surface-container overflow-hidden mb-space-sm relative">
+<img class="w-full h-full object-cover" data-alt="Artisanal layered neapolitan milkshake showing chocolate vanilla and strawberry distinct swirl bands inside a transparent glass cup" src="stitch-export/assets/generated-487cb0ba4860.jpg"/>
+<span class="absolute top-2 left-2 bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm uppercase px-1.5 py-0.5 rounded">Secret</span>
+<span class="absolute bottom-2 right-2 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">590 Cal</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">Neapolitan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">All three iconic flavors poured and swirled in equal balance.</p>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">$3.15</span>
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary active:scale-95 transition-all" onclick="quickAdd('Neapolitan Shake', 3.15)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: BEVERAGES -->
+<section class="menu-section flex flex-col gap-space-md pt-space-lg" id="section-drinks">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Ice Cold &amp; Fresh Brewed</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">Beverages</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline-block">Free In-Store Refills on Fountain</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Fountain Sodas -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">Fountain Drinks</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Coca-Cola, Diet Coke, 7UP, Dr Pepper, In-N-Out Root Beer, and Barq's.
+                    </p>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">local_drink</span>
+</div>
+<!-- Sizes & Pricing Matrix -->
+<div class="grid grid-cols-4 gap-space-xs mt-space-md">
+<div class="bg-surface-container-low p-space-xs rounded-xl text-center">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Small</span>
+<span class="font-headline-sm text-headline-sm text-primary block mt-0.5">$2.05</span>
+<span class="text-[10px] text-on-surface-variant">110-180 Cal</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-xl text-center">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Medium</span>
+<span class="font-headline-sm text-headline-sm text-primary block mt-0.5">$2.25</span>
+<span class="text-[10px] text-on-surface-variant">140-250 Cal</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-xl text-center">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Large</span>
+<span class="font-headline-sm text-headline-sm text-primary block mt-0.5">$2.55</span>
+<span class="text-[10px] text-on-surface-variant">200-340 Cal</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-xl text-center">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">X-Large</span>
+<span class="font-headline-sm text-headline-sm text-primary block mt-0.5">$2.85</span>
+<span class="text-[10px] text-on-surface-variant">260-440 Cal</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md flex gap-space-xs">
+<button class="w-full py-space-xs bg-surface-container hover:bg-primary hover:text-on-primary rounded-full font-label-sm text-label-sm uppercase transition-all" onclick="quickAdd('Fountain Drink (Med)', 2.25)">
+                  Add Medium ($2.25)
+                </button>
+<button class="w-full py-space-xs bg-surface-container hover:bg-primary hover:text-on-primary rounded-full font-label-sm text-label-sm uppercase transition-all" onclick="quickAdd('Fountain Drink (Lg)', 2.55)">
+                  Add Large ($2.55)
+                </button>
+</div>
+</div>
+<!-- Lemonade & Specialty Classics -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">Fresh Lemonade &amp; Coffee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Made with 100% real lemon juice, pure cane sugar, or slow steeped iced tea.
+                    </p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[28px]">local_cafe</span>
+</div>
+<div class="space-y-space-xs mt-space-md">
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div>
+<span class="font-title-md text-title-md text-on-surface">Fresh Sweet Lemonade</span>
+<span class="block text-[11px] text-on-surface-variant">Real California lemons squeezed daily</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary">$2.45</span>
+<button class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center" onclick="quickAdd('Fresh Sweet Lemonade', 2.45)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div>
+<span class="font-title-md text-title-md text-on-surface">Fresh Brewed Iced Tea</span>
+<span class="block text-[11px] text-on-surface-variant">Crisp, unsweetened, or mixed as Arnold Palmer</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary">$2.25</span>
+<button class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center" onclick="quickAdd('Fresh Brewed Iced Tea', 2.25)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div>
+<span class="font-title-md text-title-md text-on-surface">Ghirardelli® Hot Cocoa</span>
+<span class="block text-[11px] text-on-surface-variant">With mini marshmallows upon request</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary">$2.15</span>
+<button class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center" onclick="quickAdd('Ghirardelli Hot Cocoa', 2.15)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Also available: 100% Real Milk &amp; Fresh Brewed Coffee</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sticky Diner Order Tray & Live Kitchen Ticket (4 Col) -->
+<div class="lg:col-span-4 sticky top-24 flex flex-col gap-space-md" id="order-summary-panel">
+<!-- Live Order Card -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">receipt_long</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Your Tray</h3>
+</div>
+<span class="bg-surface-container-high px-space-sm py-0.5 rounded-full font-label-sm text-label-sm uppercase text-primary font-bold">Drive-Thru / Counter</span>
+</div>
+<!-- Empty vs Populated State Container -->
+<div class="space-y-space-sm my-space-md max-h-72 overflow-y-auto pr-1" id="cart-items-container">
+<!-- Default placeholder item -->
+<div class="p-space-md rounded-2xl bg-surface-container-low text-center flex flex-col items-center justify-center gap-space-xs py-space-xl">
+<span class="material-symbols-outlined text-on-surface-variant text-[36px]">lunch_dining</span>
+<p class="font-headline-sm text-headline-sm uppercase text-on-surface">Tray is hungry</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tap + next to any burger, fry, or shake to build your order.</p>
+</div>
+</div>
+<!-- Calculation Summary -->
+<div class="bg-surface-container-low p-space-md rounded-2xl space-y-space-xs">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Subtotal</span>
+<span class="font-semibold text-on-surface" id="subtotal-val">$0.00</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Estimated Sales Tax</span>
+<span class="font-semibold text-on-surface" id="tax-val">$0.00</span>
+</div>
+<div class="pt-space-xs flex justify-between font-headline-sm text-headline-sm text-on-surface">
+<span class="uppercase">Estimated Total</span>
+<span class="text-primary font-bold" id="total-val">$0.00</span>
+</div>
+</div>
+<!-- Checkout / Action -->
+<div class="mt-space-md space-y-space-xs">
+<button class="w-full py-space-sm px-space-md bg-primary text-on-primary font-label-lg text-label-lg uppercase rounded-full shadow-[0_4px_16px_rgba(158,0,31,0.35)] hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" onclick="handleCheckout()">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Proceed to Checkout</span>
+</button>
+<button class="w-full py-space-xs text-on-surface-variant hover:text-primary font-label-sm text-label-sm uppercase transition-colors text-center" onclick="clearTray()">
+              Clear All Tray Items
+            </button>
+</div>
+</div>
+<!-- Classic Diner Quality Pledge Card -->
+<div class="bg-surface-container-low rounded-3xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<h4 class="font-title-md text-title-md uppercase text-on-surface">The In-N-Out Standard</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Everything is crafted the old-fashioned way: our buns are slow-risen sponge dough, our produce is sliced by hand, and our beef is butchered and delivered fresh weekly.
+          </p>
+<div class="grid grid-cols-2 gap-space-xs text-[11px] font-label-sm uppercase text-on-surface">
+<div class="flex items-center gap-1 bg-surface-container-lowest p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[14px]">done</span>
+<span>No Freezers</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[14px]">done</span>
+<span>No Microwaves</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[14px]">done</span>
+<span>100% Pure Beef</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[14px]">done</span>
+<span>Kennebec Fries</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Nutrition & Ingredient Transparency Notice Section -->
+<section class="w-full bg-surface-container py-space-xl px-margin">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[28px]">health_and_safety</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Ingredient Transparency &amp; Allergens</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl mt-1">
+            We are committed to total honesty. We cook all fried items exclusively in 100% high-grade sunflower oil. Our sponge buns contain wheat, and our spread contains eggs. Gluten-free ordering is seamlessly supported with our Lettuce-Wrapped "Protein Style".
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-xs bg-surface-container-lowest text-primary rounded-full font-label-md text-label-md uppercase hover:bg-primary hover:text-on-primary transition-all shadow-sm" onclick="toggleAllergenModal()">
+          Download PDF Nutrition Guide
+        </button>
+<button class="px-space-md py-space-xs bg-primary text-on-primary rounded-full font-label-md text-label-md uppercase hover:bg-primary-container transition-all shadow-sm flex items-center gap-space-xs" onclick="toggleAllergenModal()">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>View Allergen Matrix</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Allergen Modal Overlay -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-margin" id="allergen-modal">
+<div class="bg-surface-container-lowest max-w-2xl w-full rounded-3xl p-space-xl shadow-2xl overflow-y-auto max-h-[85vh] animate-in fade-in">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">restaurant</span>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface">Allergen &amp; Nutrition Guide</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary" onclick="toggleAllergenModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Common allergens identified across our traditional items:
+      </p>
+<div class="space-y-space-xs font-body-sm text-body-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex justify-between items-center">
+<span class="font-semibold text-on-surface">Burgers (Standard)</span>
+<span class="font-label-sm text-label-sm uppercase text-primary">Contains: Wheat, Milk, Egg (Spread)</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex justify-between items-center">
+<span class="font-semibold text-on-surface">Protein Style Burgers</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Contains: Milk, Egg (Gluten Free)</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex justify-between items-center">
+<span class="font-semibold text-on-surface">Fresh-Cut French Fries</span>
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">100% Sunflower Oil • Allergen Free</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex justify-between items-center">
+<span class="font-semibold text-on-surface">Real Ice Cream Shakes</span>
+<span class="font-label-sm text-label-sm uppercase text-primary">Contains: Milk, Dairy</span>
+</div>
+</div>
+<div class="mt-space-lg flex justify-end">
+<button class="px-space-lg py-space-xs bg-primary text-on-primary rounded-full font-label-md text-label-md uppercase" onclick="toggleAllergenModal()">
+          Got It, Thanks
+        </button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+    const cart = [];
+
+    function quickAdd(name, price) {
+      const existing = cart.find(item => item.name === name);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ name, price, qty: 1 });
+      }
+      renderCart();
+      showToast(`${name} added to your tray!`);
+    }
+
+    function changeQty(index, delta) {
+      cart[index].qty += delta;
+      if (cart[index].qty <= 0) {
+        cart.splice(index, 1);
+      }
+      renderCart();
+    }
+
+    function clearTray() {
+      cart.length = 0;
+      renderCart();
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items-container');
+      const trayCount = document.getElementById('tray-count');
+      const subtotalEl = document.getElementById('subtotal-val');
+      const taxEl = document.getElementById('tax-val');
+      const totalEl = document.getElementById('total-val');
+
+      const totalItems = cart.reduce((acc, curr) => acc + curr.qty, 0);
+      trayCount.textContent = `${totalItems} ${totalItems === 1 ? 'Item' : 'Items'}`;
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="p-space-md rounded-2xl bg-surface-container-low text-center flex flex-col items-center justify-center gap-space-xs py-space-xl">
+            <span class="material-symbols-outlined text-on-surface-variant text-[36px]">lunch_dining</span>
+            <p class="font-headline-sm text-headline-sm uppercase text-on-surface">Tray is hungry</p>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Tap + next to any burger, fry, or shake to build your order.</p>
+          </div>
+        `;
+        subtotalEl.textContent = '$0.00';
+        taxEl.textContent = '$0.00';
+        totalEl.textContent = '$0.00';
+        return;
+      }
+
+      let subtotal = 0;
+      let html = '';
+
+      cart.forEach((item, index) => {
+        const itemTotal = item.price * item.qty;
+        subtotal += itemTotal;
+        html += `
+          <div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between gap-space-xs">
+            <div class="min-w-0 flex-1">
+              <div class="font-title-md text-title-md text-on-surface truncate">${item.name}</div>
+              <div class="text-[12px] text-on-surface-variant">$${item.price.toFixed(2)} each</div>
+            </div>
+            <div class="flex items-center gap-space-xs shrink-0">
+              <button onclick="changeQty(${index}, -1)" class="w-6 h-6 rounded-full bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary flex items-center justify-center">
+                -
+              </button>
+              <span class="font-label-md text-label-md w-5 text-center">${item.qty}</span>
+              <button onclick="changeQty(${index}, 1)" class="w-6 h-6 rounded-full bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary flex items-center justify-center">
+                +
+              </button>
+              <span class="font-label-md text-label-md text-primary font-bold ml-2">$${itemTotal.toFixed(2)}</span>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+      const tax = subtotal * 0.0825;
+      const total = subtotal + tax;
+
+      subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+      taxEl.textContent = `$${tax.toFixed(2)}`;
+      totalEl.textContent = `$${total.toFixed(2)}`;
+    }
+
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.category-btn').forEach(el => {
+        el.className = 'category-btn px-space-lg py-space-xs rounded-full font-label-lg text-label-lg whitespace-nowrap bg-surface-container-lowest text-on-surface hover:bg-surface-variant transition-all';
+      });
+      btn.className = 'category-btn px-space-lg py-space-xs rounded-full font-label-lg text-label-lg whitespace-nowrap bg-primary text-on-primary shadow-sm transition-all';
+
+      const sections = {
+        burgers: document.getElementById('section-burgers'),
+        fries: document.getElementById('section-fries'),
+        shakes: document.getElementById('section-shakes'),
+        drinks: document.getElementById('section-drinks')
+      };
+
+      if (cat === 'all') {
+        Object.values(sections).forEach(s => s && (s.style.display = 'flex'));
+      } else if (cat === 'secret') {
+        // Show sections but highlight Animal style products
+        Object.values(sections).forEach(s => s && (s.style.display = 'flex'));
+        showToast('Highlighting Animal Style & Secret Menu classics!');
+      } else {
+        Object.keys(sections).forEach(key => {
+          if (sections[key]) {
+            sections[key].style.display = (key === cat) ? 'flex' : 'none';
+          }
+        });
+      }
+    }
+
+    function toggleAllergenModal() {
+      const modal = document.getElementById('allergen-modal');
+      if (modal.classList.contains('hidden')) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      } else {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+      }
+    }
+
+    function scrollToOrderSummary() {
+      const panel = document.getElementById('order-summary-panel');
+      if (panel) {
+        panel.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function handleCheckout() {
+      if (cart.length === 0) {
+        showToast('Your tray is currently empty. Add an item first!');
+      } else {
+        showToast('Order confirmed! Sending fresh ticket to the grill...');
+      }
+    }
+
+    function showToast(msg) {
+      let toast = document.getElementById('action-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'action-toast';
+        toast.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-space-lg py-space-sm rounded-full font-label-md text-label-md uppercase tracking-wider shadow-2xl flex items-center gap-space-xs transition-opacity duration-300';
+        document.body.appendChild(toast);
+      }
+      toast.innerHTML = `<span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> ${msg}`;
+      toast.style.opacity = '1';
+      setTimeout(() => {
+        toast.style.opacity = '0';
+      }, 2600);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container text-on-surface mt-auto"><div class="h-1.5 w-full bg-primary flex"><div class="h-full w-1/3 bg-primary"></div><div class="h-full w-1/3 bg-secondary-container"></div><div class="h-full w-1/3 bg-primary"></div></div><div class="max-w-7xl mx-auto px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div><div class="flex items-center gap-space-xs mb-space-md"><span class="material-symbols-outlined text-primary text-[28px]">park</span><span class="font-headline-sm text-headline-sm uppercase text-primary">In-N-Out</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md italic">“That’s What a Hamburger’s All About”</p><p class="font-body-sm text-body-sm text-on-surface mb-space-md">Providing the freshest burgers, hand-leafed lettuce, sponge dough buns, and real ice cream shakes since 1948.</p><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(31,36,33,0.05)]"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-space-xs">Customer Service Hotline</span><a class="font-headline-sm text-headline-sm text-primary hover:text-primary-container font-bold flex items-center gap-space-xs transition-colors" href="tel:18007861000"><span class="material-symbols-outlined text-[20px]">support_agent</span> 1-800-786-1000</a></div></div><div><h4 class="font-title-md text-title-md uppercase text-primary mb-space-md flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[20px]">restaurant_menu</span> Quick Links</h4><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="border-b border-surface-variant/40 pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="home" href="#"><span>Home</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li><li class="border-b border-surface-variant/40 pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="menu" href="#"><span>Full Menu</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li><li class="border-b border-surface-variant/40 pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="secret-menu-favorites" href="#"><span class="flex items-center gap-space-xs">Secret Menu Favorites <span class="bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm px-1.5 py-0.5 rounded">Special</span></span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li><li class="border-b border-surface-variant/40 pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="gift-cards" href="#"><span>Gift Cards</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li><li class="border-b border-surface-variant/40 pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="company-store" href="#"><span>Company Store</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li><li class="pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="merchandise" href="#"><span>Merchandise</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li></ul></div><div><h4 class="font-title-md text-title-md uppercase text-primary mb-space-md flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[20px]">pin_drop</span> Locations &amp; Hours</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Quality made to order across the West &amp; Southwest:</p><div class="grid grid-cols-2 gap-space-xs font-label-md text-label-md text-on-surface"><span class="flex items-center gap-space-xs py-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> California</span><span class="flex items-center gap-space-xs py-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Nevada</span><span class="flex items-center gap-space-xs py-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Arizona</span><span class="flex items-center gap-space-xs py-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Utah</span><span class="flex items-center gap-space-xs py-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Texas</span><span class="flex items-center gap-space-xs py-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Oregon</span><span class="flex items-center gap-space-xs py-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Colorado</span><span class="flex items-center gap-space-xs py-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Idaho</span></div><a class="mt-space-md inline-flex items-center gap-space-xs font-label-md text-label-md uppercase text-primary hover:text-primary-container transition-colors" data-path="locations" href="#"><span>Find Nearest Drive-Thru</span> <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a></div><div><h4 class="font-title-md text-title-md uppercase text-primary mb-space-md flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[20px]">badge</span> Careers &amp; Culture</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Be part of a legendary family that promotes exclusively from within.</p><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="border-b border-surface-variant/40 pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="careers" href="#"><span>Why In-N-Out</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li><li class="border-b border-surface-variant/40 pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="store-associates" href="#"><span>Store Associates</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li><li class="border-b border-surface-variant/40 pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="management-training" href="#"><span>Management Training</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li><li class="pb-space-xs"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-between" data-path="benefits" href="#"><span>Excellent Benefits</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></li></ul></div></div><div class="border-t border-surface-variant/60 pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><span class="font-label-md text-label-md uppercase text-on-surface-variant">Connect:</span><div class="flex items-center gap-space-sm"><a class="w-9 h-9 rounded-full bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary flex items-center justify-center transition-colors shadow-sm" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a class="w-9 h-9 rounded-full bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary flex items-center justify-center transition-colors shadow-sm" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a class="w-9 h-9 rounded-full bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary flex items-center justify-center transition-colors shadow-sm" href="#"><span class="material-symbols-outlined text-[18px]">campaign</span></a><a class="w-9 h-9 rounded-full bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary flex items-center justify-center transition-colors shadow-sm" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a></div></div><div class="flex flex-wrap items-center justify-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><span>•</span><a class="hover:text-primary transition-colors" data-path="terms-conditions" href="#">Terms &amp; Conditions</a><span>•</span><a class="hover:text-primary transition-colors" data-path="accessibility" href="#">Accessibility</a></div><div class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-right">© 2025 In-N-Out Burgers. All rights reserved.</div></div></div></footer>  <script defer src="site.js"></script>
+</body></html>
